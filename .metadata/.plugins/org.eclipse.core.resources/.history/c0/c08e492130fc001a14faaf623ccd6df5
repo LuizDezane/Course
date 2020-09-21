@@ -42,13 +42,12 @@ public class Program {
 		int n = sc.nextInt();
 		
 		for(int i = 1;i<=n;i++) {
-			System.out.println("Enter #"+i+" item data: ");
-			sc.nextLine();
+			System.out.println("Enter #"+i+"item data: ");
 			System.out.print("Product name: ");
 			String nameProduct = sc.nextLine();
-			System.out.print("Product price: ");
+			System.out.println("Product price: ");
 			Double priceProduct = sc.nextDouble();
-			System.out.print("Quantity: ");
+			System.out.println("Quantity: ");
 			Integer quantityProduct = sc.nextInt();
 			
 			Product product = new Product(nameProduct, priceProduct);
@@ -59,7 +58,6 @@ public class Program {
 			
 		}
 		
-		System.out.println();
 		System.out.println(order);
 	
 				

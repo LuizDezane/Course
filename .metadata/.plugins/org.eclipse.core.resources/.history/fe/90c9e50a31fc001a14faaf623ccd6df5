@@ -44,17 +44,4 @@ public class OrderItem {
 		return quantity * price;
 	}
 
-	@Override
-	public String toString() {
-		return product
-				+ ", "
-				+ "Quantity: "
-				+ quantity
-				+ ", "
-				+ "Subtotal: "
-				+ subTotal();
-	}
-
-	
-	
 }

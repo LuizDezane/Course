@@ -46,9 +46,9 @@ public class Program {
 			sc.nextLine();
 			System.out.print("Product name: ");
 			String nameProduct = sc.nextLine();
-			System.out.print("Product price: ");
+			System.out.println("Product price: ");
 			Double priceProduct = sc.nextDouble();
-			System.out.print("Quantity: ");
+			System.out.println("Quantity: ");
 			Integer quantityProduct = sc.nextInt();
 			
 			Product product = new Product(nameProduct, priceProduct);
@@ -59,7 +59,6 @@ public class Program {
 			
 		}
 		
-		System.out.println();
 		System.out.println(order);
 	
 				

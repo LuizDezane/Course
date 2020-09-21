@@ -18,14 +18,14 @@ public class Program {
 	    Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/aaaa");
 		
 		System.out.println("Enter cliente data:");
 		System.out.print("Name: ");
 		String name = sc.nextLine();
 		System.out.print("Email: ");
 		String email = sc.nextLine();
-		System.out.print("Birth date (DD/MM/YYYY): ");
+		System.out.println("Birth date (DD/MM/YYYY): ");
 		Date birthDate = sdf.parse(sc.nextLine());
 		System.out.println();
 		
@@ -42,27 +42,28 @@ public class Program {
 		int n = sc.nextInt();
 		
 		for(int i = 1;i<=n;i++) {
-			System.out.println("Enter #"+i+" item data: ");
-			sc.nextLine();
+			System.out.println("Enter #"+i+"item data: ");
 			System.out.print("Product name: ");
 			String nameProduct = sc.nextLine();
-			System.out.print("Product price: ");
+			System.out.println("Product price: ");
 			Double priceProduct = sc.nextDouble();
-			System.out.print("Quantity: ");
+			System.out.println("Quantity: ");
 			Integer quantityProduct = sc.nextInt();
 			
 			Product product = new Product(nameProduct, priceProduct);
-			
 			OrderItem orderItem = new OrderItem(quantityProduct, priceProduct, product);
-			
 			order.addItem(orderItem);
 			
 		}
 		
-		System.out.println();
-		System.out.println(order);
+		
+		
 	
-				
+		
+		
+	
+		
+		
 		sc.close();
 	}
 
